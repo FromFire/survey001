@@ -1,12 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#FFFFFF">
 
     <!--  Start : Your code should be within this block -->
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
 
+        android:layout_marginTop="54dp"
+
+        android:text="Question 7"
+        android:textColor="@android:color/black"
+        android:textSize="25sp" />
+
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="106dp"
+
+        android:text="In which condition will you buy a \n new phone?"
+        android:textSize="18sp" />
+
+    <RadioGroup
+        android:id="@+id/q7rgp1"
+        android:layout_width="250dp"
+        android:layout_height="410dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="77dp"
+        android:layout_marginTop="152dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/q7rb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="When the old phone has been \n used for a year or two.(but it still \n works)"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/q7rb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="When the old phone has been \n used for more than three years.\n (but it still works)"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/q7rb3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="When the old phone breaks \n down."
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/q7rb4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="When a new phone is released."
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/q7rb5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Others"
+            android:textSize="20sp" />
+
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/next7"
+        android:layout_width="234dp"
+        android:layout_height="38dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="577dp"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:onClick="next7"
+        android:text="NEXT"
+        android:textColor="#ff00ff" />
 
     <!-- END    : Your code should be within this block -->
 
-</LinearLayout>
+</RelativeLayout>
