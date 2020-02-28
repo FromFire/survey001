@@ -34,8 +34,8 @@
 
     <RadioGroup
         android:id="@+id/q8rgp1"
-        android:layout_width="272dp"
-        android:layout_height="435dp"
+        android:layout_width="262dp"
+        android:layout_height="316dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_marginLeft="74dp"
@@ -47,44 +47,51 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
+            android:checked="true"
             android:text="Iphone"
-            android:textSize="20sp"/>
+            android:textSize="20sp" />
+
         <RadioButton
             android:id="@+id/q8rb2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Nokia"
-            android:textSize="20sp"/>
+            android:textSize="20sp" />
+
         <RadioButton
             android:id="@+id/q8rb3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Samsung"
-            android:textSize="20sp"/>
+            android:textSize="20sp" />
+
         <RadioButton
             android:id="@+id/q8rb4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="MI"
-            android:textSize="20sp"/>
+            android:textSize="20sp" />
+
         <RadioButton
             android:id="@+id/q8rb5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Lenovo"
-            android:textSize="20sp"/>
+            android:textSize="20sp" />
+
         <RadioButton
             android:id="@+id/q8rb6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Sony"
-            android:textSize="20sp"/>
+            android:textSize="20sp" />
+
         <RadioButton
             android:id="@+id/q8rb7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Others"
-            android:textSize="20sp"/>
+            android:textSize="20sp" />
     </RadioGroup>
 
     <Button
@@ -93,13 +100,12 @@
         android:layout_height="38dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="577dp"
+        android:layout_marginTop="518dp"
         android:background="@color/colorAccent"
         android:gravity="center"
         android:onClick="next8"
         android:text="NEXT"
         android:textColor="#ff00ff" />
-
 
 
     <!-- END    : Your code should be within this block -->

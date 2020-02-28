@@ -163,16 +163,14 @@
         android:textSize="15sp" />
 
     <Button
-        android:id="@+id/button1"
-
+        android:id="@+id/save1"
         android:layout_width="234dp"
         android:layout_height="38dp"
         android:layout_alignParentTop="true"
-
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="550dp"
+        android:layout_marginTop="511dp"
         android:background="@color/colorAccent"
         android:gravity="center"
-        android:text="Finish"
+        android:text="save"
         android:textColor="#ff00ff" />
 </RelativeLayout>

@@ -32,8 +32,8 @@
 
     <RadioGroup
         android:id="@+id/q7rgp1"
-        android:layout_width="250dp"
-        android:layout_height="410dp"
+        android:layout_width="275dp"
+        android:layout_height="325dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_centerInParent="true"
@@ -45,21 +45,22 @@
             android:id="@+id/q7rb1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="When the old phone has been \n used for a year or two.(but it still \n works)"
+            android:checked="true"
+            android:text="When the old phone has been  used for a year or two.(but it still  works)"
             android:textSize="20sp" />
 
         <RadioButton
             android:id="@+id/q7rb2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="When the old phone has been \n used for more than three years.\n (but it still works)"
+            android:text="When the old phone has been used for more than three years. (but it still works)"
             android:textSize="20sp" />
 
         <RadioButton
             android:id="@+id/q7rb3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="When the old phone breaks \n down."
+            android:text="When the old phone breaks  down."
             android:textSize="20sp" />
 
         <RadioButton
@@ -85,7 +86,7 @@
         android:layout_height="38dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="577dp"
+        android:layout_marginTop="521dp"
         android:background="@color/colorAccent"
         android:gravity="center"
         android:onClick="next7"

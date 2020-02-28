@@ -8,15 +8,15 @@
     android:background="#FFFFFF">
     <!--  Start : Your code should be within this block -->
 
+
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="405dp"
+        android:layout_width="299dp"
+        android:layout_height="237dp"
         android:layout_alignParentTop="true"
         android:layout_centerVertical="true"
-        android:layout_marginTop="148dp"
+        android:layout_marginTop="200dp"
         android:src="@drawable/yukii" />
-
 
     <TextView
         android:id="@+id/txt1"
@@ -55,14 +55,12 @@
         android:layout_height="38dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="577dp"
+        android:layout_marginTop="483dp"
         android:gravity="center"
-        android:text="FINISH"
         android:onClick="finish"
+        android:text="FINISH"
 
         android:textColor="#ff00ff" />
-
-
 
 
     <!-- END    : Your code should be within this block -->
