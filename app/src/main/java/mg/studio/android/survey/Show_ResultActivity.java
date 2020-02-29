@@ -140,21 +140,30 @@ public class Show_ResultActivity extends AppCompatActivity {
 
         File sdFile=getExternalFilesDir(null);
         FileOutputStream fout=null;
-        File saveData=new File(sdFile,"saveData.txt");
+        File saveData1=new File(sdFile,"saveData.json");
+        File saveData2=new File(sdFile,"saveData.txt");
         if(Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED))
         try {
             //FileOutputStream fout=new FileOutputStream(saveData);
-            fout=new FileOutputStream(saveData,true);
+            fout=new FileOutputStream(saveData1,true);
             fout.write(msg.getBytes());
             fout.flush();
             fout.close();
+
+
+            fout=new FileOutputStream(saveData2,true);
+            fout.write(msg.getBytes());
+            fout.flush();
+            fout.close();
+
+
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-
     }
+
+
 
 }
