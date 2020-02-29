@@ -66,7 +66,7 @@ public class Show_ResultActivity extends AppCompatActivity {
         qa12.setText("Q12:"+Question_TwelveActivity.answer);
 
 
-        final String q1="{question:1,answer:'"+Question_OneActivity.answer+"'}"+"\n"+
+        final String q1="\n"+"{question:1,answer:'"+Question_OneActivity.answer+"'}"+"\n"+
                 "{question:2,answer:'"+Question_TwoActivity.answer+"'}"+"\n"+
                 "{question:3,answer:'"+Question_ThreeActivity.answer+"'}"+"\n"+
                 "{question:4,answer:'"+Question_FourActivity.answer+"'}"+"\n"+
@@ -77,7 +77,7 @@ public class Show_ResultActivity extends AppCompatActivity {
                 "{question:9,answer:'"+Question_NineActivity.answer+"'}"+"\n"+
                 "{question:10,answer:'"+Question_TenActivity.answer+"'}"+"\n"+
                 "{question:11,answer:'"+Question_ElevenActivity.answer+"'}"+"\n"+
-                "{question:12,answer:'"+Question_TwelveActivity.answer+"'}";
+                "{question:12,answer:'"+Question_TwelveActivity.answer+"'}"+"\n";
 
 
       /*
@@ -137,10 +137,14 @@ public class Show_ResultActivity extends AppCompatActivity {
         }
 
          */
+
         File sdFile=getExternalFilesDir(null);
+        FileOutputStream fout=null;
         File saveData=new File(sdFile,"saveData.txt");
+        if(Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED))
         try {
-            FileOutputStream fout=new FileOutputStream(saveData);
+            //FileOutputStream fout=new FileOutputStream(saveData);
+            fout=new FileOutputStream(saveData,true);
             fout.write(msg.getBytes());
             fout.flush();
             fout.close();
