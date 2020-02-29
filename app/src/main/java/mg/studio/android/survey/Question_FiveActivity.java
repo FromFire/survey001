@@ -10,7 +10,7 @@ import android.widget.CheckBox;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
-public class question_five extends AppCompatActivity {
+public class Question_FiveActivity extends AppCompatActivity {
 
     public String answer5="NONE";
     public static String answer;
@@ -85,7 +85,10 @@ public class question_five extends AppCompatActivity {
             }
         }
         answer = answer5;
-        passDate();
+        if(q5ck1.isChecked()||q5ck2.isChecked()||q5ck3.isChecked()||q5ck4.isChecked()
+                ||q5ck5.isChecked()||q5ck6.isChecked()||q5ck7.isChecked()) {
+            passDate();
+        }
     }
     //给按钮设置点击事件
      /*   next4.setOnClickListener(new View.OnClickListener()
@@ -105,7 +108,7 @@ public class question_five extends AppCompatActivity {
 
     public void passDate()
     {//创建意图对象
-        Intent intent =new Intent(this,question_six.class);
+        Intent intent =new Intent(this,Question_SixActivity.class);
 
         //开启意图
         startActivity(intent);

@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
     public void Welcome(View view)
     {//创建意图对象
         if(CheckBox.isChecked()){
-            Intent intent =new Intent(this,question_one.class);
+            Intent intent =new Intent(this,Question_OneActivity.class);
 
             //开启意图
             startActivity(intent);

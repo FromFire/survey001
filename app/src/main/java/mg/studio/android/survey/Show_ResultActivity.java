@@ -1,8 +1,11 @@
 package mg.studio.android.survey;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.Manifest;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.view.View;
@@ -14,7 +17,7 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-public class show_result extends AppCompatActivity {
+public class Show_ResultActivity extends AppCompatActivity {
     private TextView qa1;
     private TextView qa2;
     private TextView qa3;
@@ -49,32 +52,34 @@ public class show_result extends AppCompatActivity {
         qa12= (TextView) findViewById(R.id.qa12);
         save1=(Button)findViewById(R.id.save1);
 
-        qa1.setText("Q1: "+question_one.answer);
-        qa2.setText("Q2: "+question_two.answer);
-        qa3.setText("Q3: "+question_three.answer);
-        qa4.setText("Q4: "+question_four.answer);
-        qa5.setText("Q5: "+question_five.answer);
-        qa6.setText("Q6: "+question_six.answer);
-        qa7.setText("Q7: "+question_seven.answer);
-        qa8.setText("Q8: "+question_eight.answer);
-        qa9.setText("Q9: "+question_nine.answer);
-        qa10.setText("Q10: "+question_ten.answer);
-        qa11.setText("Q11:"+question_eleven.answer);
-        qa12.setText("Q12:"+question_twelve.answer);
+        qa1.setText("Q1: "+Question_OneActivity.answer);
+        qa2.setText("Q2: "+Question_TwoActivity.answer);
+        qa3.setText("Q3: "+Question_ThreeActivity.answer);
+        qa4.setText("Q4: "+Question_FourActivity.answer);
+        qa5.setText("Q5: "+Question_FiveActivity.answer);
+        qa6.setText("Q6: "+Question_SixActivity.answer);
+        qa7.setText("Q7: "+Question_SevenActivity.answer);
+        qa8.setText("Q8: "+Question_EightActivity.answer);
+        qa9.setText("Q9: "+Question_NineActivity.answer);
+        qa10.setText("Q10: "+Question_TenActivity.answer);
+        qa11.setText("Q11:"+Question_ElevenActivity.answer);
+        qa12.setText("Q12:"+Question_TwelveActivity.answer);
 
 
-        final String q1="{question:1,answer:'"+question_one.answer+"'}"+"\n"+
-                "{question:2,answer:'"+question_two.answer+"'}"+"\n"+
-                "{question:3,answer:'"+question_three.answer+"'}"+"\n"+
-                "{question:4,answer:'"+question_four.answer+"'}"+"\n"+
-                "{question:5,answer:'"+question_five.answer+"'}"+"\n"+
-                "{question:6,answer:'"+question_six.answer+"'}"+"\n"+
-                "{question:7,answer:'"+question_seven.answer+"'}"+"\n"+
-                "{question:8,answer:'"+question_eight.answer+"'}"+"\n"+
-                "{question:9,answer:'"+question_nine.answer+"'}"+"\n"+
-                "{question:10,answer:'"+question_ten.answer+"'}"+"\n"+
-                "{question:11,answer:'"+question_eleven.answer+"'}"+"\n"+
-                "{question:12,answer:'"+question_twelve.answer+"'}";
+        final String q1="{question:1,answer:'"+Question_OneActivity.answer+"'}"+"\n"+
+                "{question:2,answer:'"+Question_TwoActivity.answer+"'}"+"\n"+
+                "{question:3,answer:'"+Question_ThreeActivity.answer+"'}"+"\n"+
+                "{question:4,answer:'"+Question_FourActivity.answer+"'}"+"\n"+
+                "{question:5,answer:'"+Question_FiveActivity.answer+"'}"+"\n"+
+                "{question:6,answer:'"+Question_SixActivity.answer+"'}"+"\n"+
+                "{question:7,answer:'"+Question_SevenActivity.answer+"'}"+"\n"+
+                "{question:8,answer:'"+Question_EightActivity.answer+"'}"+"\n"+
+                "{question:9,answer:'"+Question_NineActivity.answer+"'}"+"\n"+
+                "{question:10,answer:'"+Question_TenActivity.answer+"'}"+"\n"+
+                "{question:11,answer:'"+Question_ElevenActivity.answer+"'}"+"\n"+
+                "{question:12,answer:'"+Question_TwelveActivity.answer+"'}";
+
+
       /*
         final String q2="{question:2,answer:'"+question_two.answer+"'}";
         final String q3="{question:3,answer:'"+question_three.answer+"'}";
@@ -91,9 +96,11 @@ public class show_result extends AppCompatActivity {
 
             //为按钮添加点击事件更新
         save1.setOnClickListener(new View.OnClickListener(){
+            @RequiresApi(api = Build.VERSION_CODES.M)
             @Override
             public void onClick(View view)
             {
+
                 save2File(q1);
                 /*save2File(q2);
                 save2File(q3);
@@ -130,7 +137,7 @@ public class show_result extends AppCompatActivity {
         }
 
          */
-        File sdFile=Environment.getExternalStorageDirectory();
+        File sdFile=getExternalFilesDir(null);
         File saveData=new File(sdFile,"saveData.txt");
         try {
             FileOutputStream fout=new FileOutputStream(saveData);

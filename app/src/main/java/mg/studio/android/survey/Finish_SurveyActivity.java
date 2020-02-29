@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class finish_survey extends AppCompatActivity {
+public class Finish_SurveyActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,7 +17,7 @@ public class finish_survey extends AppCompatActivity {
     }
 
     public void finish(View view){
-        Intent intent = new Intent(this, show_result.class);
+        Intent intent = new Intent(this, Show_ResultActivity.class);
         startActivity(intent);
     }
 }

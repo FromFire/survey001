@@ -4,12 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.RadioButton;
-import android.widget.RadioGroup;
-import android.widget.TextView;
 
-public class question_twelve extends AppCompatActivity {
+public class Question_TwelveActivity extends AppCompatActivity {
 
     public static String answer;
     public String answer12;
@@ -63,7 +60,7 @@ public class question_twelve extends AppCompatActivity {
 
     public void passDate()
     {//创建意图对象
-        Intent intent =new Intent(this,finish_survey.class);
+        Intent intent =new Intent(this, Finish_SurveyActivity.class);
         startActivity(intent);
     }
 

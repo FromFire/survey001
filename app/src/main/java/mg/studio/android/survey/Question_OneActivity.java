@@ -10,7 +10,7 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
-public class question_one extends AppCompatActivity {
+public class Question_OneActivity extends AppCompatActivity {
     public static String answer;
     public String answer1;
     private RadioButton q1rb1;
@@ -63,14 +63,20 @@ public class question_one extends AppCompatActivity {
         }
         answer = answer1;
 
-        passDate();
-        //    setContentView(R.layout.question_two);
+        if (q1rb1.isChecked()||q1rb2.isChecked()||q1rb3.isChecked()||q1rb4.isChecked()
+                ||q1rb5.isChecked()||q1rb6.isChecked()||q1rb7.isChecked())
+        {
+            passDate();
+        }
+
+
+     //    setContentView(R.layout.question_two);
     }
 
 
     public void passDate()
     {//创建意图对象
-        Intent intent =new Intent(this,question_two.class);
+        Intent intent =new Intent(this,Question_TwoActivity.class);
         startActivity(intent);
     }
 

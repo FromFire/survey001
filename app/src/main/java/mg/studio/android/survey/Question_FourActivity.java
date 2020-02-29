@@ -10,7 +10,7 @@ import android.widget.CheckBox;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
-public class question_four extends AppCompatActivity {
+public class Question_FourActivity extends AppCompatActivity {
     public String answer4="NONE";
     public static String answer;
 
@@ -84,13 +84,17 @@ public class question_four extends AppCompatActivity {
             }
         }
         answer = answer4;
-        passDate();
+
+        if(q4ck1.isChecked()||q4ck2.isChecked()||q4ck3.isChecked()||q4ck4.isChecked()
+                ||q4ck5.isChecked()||q4ck6.isChecked()||q4ck7.isChecked()) {
+            passDate();
+        }
     }
 
 
     public void passDate()
     {//创建意图对象
-        Intent intent =new Intent(this, question_five.class);
+        Intent intent =new Intent(this, Question_FiveActivity.class);
 
         //开启意图
         startActivity(intent);

@@ -10,7 +10,7 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
-public class question_nine extends AppCompatActivity {
+public class Question_NineActivity extends AppCompatActivity {
     public static String answer;
     public String answer9;
     private RadioButton q9rb1;
@@ -61,7 +61,7 @@ public class question_nine extends AppCompatActivity {
 
     public void passDate()
     {//创建意图对象
-        Intent intent =new Intent(this,question_ten.class);
+        Intent intent =new Intent(this,Question_TenActivity.class);
         startActivity(intent);
     }
 

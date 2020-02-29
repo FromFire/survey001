@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class question_six extends AppCompatActivity {
+public class Question_SixActivity extends AppCompatActivity {
     public String answer6="NONE";
     public static String answer="None";
     private EditText q6et1;
@@ -22,13 +22,16 @@ public class question_six extends AppCompatActivity {
     }
     public void next6(View view){
         answer6 = q6et1.getText().toString();
-        answer = answer6;
-        passDate();
+
+        if(answer6.length()!=0) {
+            answer = answer6;
+            passDate();
+        }
     }
 
     public void passDate()
     {//创建意图对象
-        Intent intent =new Intent(this, question_seven.class);
+        Intent intent =new Intent(this, Question_SevenActivity.class);
         //把数据存入intent对象
         //开启意图
         startActivity(intent);

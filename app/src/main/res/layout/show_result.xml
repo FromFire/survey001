@@ -29,7 +29,7 @@
         android:layout_marginTop="46dp"
         android:text="Q1:"
         android:textColor="@android:color/black"
-        android:textSize="15sp" />
+        android:textSize="10sp" />
 
     <TextView
         android:id="@+id/qa2"
@@ -41,7 +41,7 @@
         android:layout_marginTop="81dp"
         android:text="Q2:"
         android:textColor="@android:color/black"
-        android:textSize="15sp" />
+        android:textSize="10sp" />
 
     <TextView
         android:id="@+id/qa3"
@@ -53,31 +53,31 @@
         android:layout_marginTop="120dp"
         android:text="Q3:"
         android:textColor="@android:color/black"
-        android:textSize="15sp" />
+        android:textSize="10sp" />
 
     <TextView
         android:id="@+id/qa4"
 
 
-        android:layout_width="347dp"
-        android:layout_height="22dp"
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
         android:layout_alignParentTop="true"
         android:layout_marginTop="158dp"
         android:text="Q4:"
         android:textColor="@android:color/black"
-        android:textSize="15sp" />
+        android:textSize="10sp" />
 
     <TextView
         android:id="@+id/qa5"
 
 
-        android:layout_width="347dp"
-        android:layout_height="22dp"
+        android:layout_width="match_parent"
+        android:layout_height="29dp"
         android:layout_alignParentTop="true"
         android:layout_marginTop="200dp"
         android:text="Q5:"
         android:textColor="@android:color/black"
-        android:textSize="15sp" />
+        android:textSize="10sp" />
 
     <TextView
         android:id="@+id/qa6"
@@ -89,19 +89,19 @@
         android:layout_marginTop="239dp"
         android:text="Q6:"
         android:textColor="@android:color/black"
-        android:textSize="15sp" />
+        android:textSize="10sp" />
 
     <TextView
         android:id="@+id/qa7"
 
 
-        android:layout_width="347dp"
-        android:layout_height="22dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
         android:layout_alignParentTop="true"
         android:layout_marginTop="277dp"
         android:text="Q7:"
         android:textColor="@android:color/black"
-        android:textSize="15sp" />
+        android:textSize="10sp" />
 
     <TextView
         android:id="@+id/qa8"
@@ -113,7 +113,7 @@
         android:layout_marginTop="313dp"
         android:text="Q8:"
         android:textColor="@android:color/black"
-        android:textSize="15sp" />
+        android:textSize="10sp" />
 
     <TextView
         android:id="@+id/qa9"
@@ -124,7 +124,7 @@
         android:layout_marginTop="351dp"
         android:text="Q9:"
         android:textColor="@android:color/black"
-        android:textSize="15sp" />
+        android:textSize="10sp" />
 
     <TextView
         android:id="@+id/qa10"
@@ -136,7 +136,7 @@
         android:layout_marginTop="385dp"
         android:text="Q10:"
         android:textColor="@android:color/black"
-        android:textSize="15sp" />
+        android:textSize="10sp" />
 
     <TextView
         android:id="@+id/qa11"
@@ -148,7 +148,7 @@
         android:layout_marginTop="422dp"
         android:text="Q11:"
         android:textColor="@android:color/black"
-        android:textSize="15sp" />
+        android:textSize="10sp" />
 
     <TextView
         android:id="@+id/qa12"
@@ -160,7 +160,7 @@
         android:layout_marginTop="464dp"
         android:text="Q12:"
         android:textColor="@android:color/black"
-        android:textSize="15sp" />
+        android:textSize="10sp" />
 
     <Button
         android:id="@+id/save1"
@@ -168,7 +168,7 @@
         android:layout_height="38dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="511dp"
+        android:layout_marginTop="510dp"
         android:background="@color/colorAccent"
         android:gravity="center"
         android:text="save"
